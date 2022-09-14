@@ -635,26 +635,26 @@ main{
 
 .super-section-1 .card-1 {
   grid-area: 1 / 2 ; /*                                           placement */
-  background-image: url(/Assets/img/cdn.cliqueinc.com__cache__posts__263938__small-master-bedroom-ideas-263938-1532626537299-image.jpg);
+  background-image: url(./Assets/img/cdn.cliqueinc.com__cache__posts__263938__small-master-bedroom-ideas-263938-1532626537299-image.jpg);
   background-size: cover;
 }
 
 .super-section-1 .card-2 {
   grid-area: 2 / 1 ; /*                                           placement */
-  background-image: url(/Assets/img/86fe1ce5-b88c-4753-8cb0-10a604aec253.webp);
+  background-image: url(./Assets/img/86fe1ce5-b88c-4753-8cb0-10a604aec253.webp);
   background-size: cover;
 }
 
 .super-section-1 .card-3 {
   grid-area: 3 / 2 ; /*                                           placement */
   /* background-image: url(/Assets/img/aeb2b27d-b662-4cab-90f0-d85a041378a2.webp); */
-  background-image: url(/Assets/img/bringing-tea-AdobeStock_110203778.webp);
+  background-image: url(./Assets/img/bringing-tea-AdobeStock_110203778.webp);
   background-size: cover;
 }
 
 .super-section-1 .card-4 {
   grid-area: 4 / 1 ; /*                                           placement */
-  background-image: url(/Assets/img/aeb2b27d-b662-4cab-90f0-d85a041378a2.webp);
+  background-image: url(./Assets/img/aeb2b27d-b662-4cab-90f0-d85a041378a2.webp);
   /* background-image: url(/Assets/img/bringing-tea-AdobeStock_110203778.webp); */
   background-size: cover;
 }
