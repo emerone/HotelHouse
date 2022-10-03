@@ -8,7 +8,6 @@ logoTitle.addEventListener("click", function(){
     footer.classList.add("menu")
 });
 
-
 //baner in news
 
 
@@ -114,7 +113,7 @@ for(let q=0;q<btnsModalOpen.length;q++){
 
 
 
-//Close all the modal at the same time even not needed just to lines of code
+//Close all the modal
 
 
 //mobile menu
@@ -143,7 +142,6 @@ const spa = document.querySelectorAll('.spa');
 const hotel = document.querySelectorAll('.hotel');
 const opinions = document.querySelector('.opinions');
 const news = document.querySelectorAll('.news');
-
 
 home.addEventListener('click', () => {
 
@@ -179,7 +177,6 @@ for(let b = 0; b<bedroom.length;b++){
 
             }, {once:true});
         }
-        
     });
 }
 
@@ -283,3 +280,31 @@ for(let b = 0; b<bedroom.length;b++){
         
     });
 } 
+
+// Hash location 
+
+if ( window.location.hash == "#Bedroom"){
+    setTimeout(() => {
+        header.setAttribute('class', 'super-container b');
+    }, 1000)
+}
+
+if ( window.location.hash == "#Restaurant"){
+    header.setAttribute("class", 'super-container c')
+}
+
+if ( window.location.hash == "#SPA"){
+    header.setAttribute("class", 'super-container d')
+}
+
+if ( window.location.hash == "#Hotel"){
+    header.setAttribute("class", 'super-container e')
+}
+
+if ( window.location.hash == "#Opinions"){
+    header.setAttribute("class", 'super-container f')
+}
+
+if ( window.location.hash == "#News"){
+    header.setAttribute("class", 'super-container g')
+}
