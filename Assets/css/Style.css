@@ -751,6 +751,7 @@ main{
   display: flex;
   flex-direction: column;
   flex: 1;
+  padding-bottom: 32rem;
 }
 
 .super-section-2 img {
@@ -933,10 +934,11 @@ main{
 }
 
 .super-section-4 > div > div {
+  --padding-section: 50rem;
   display: flex;
   justify-content: space-evenly;
   gap: var(--padding-section);
-  /* padding: var(--padding-section); */
+  margin-bottom: 50rem;
 }
 
 .super-section-4 .card {
@@ -951,6 +953,7 @@ main{
   border-radius: var(--border-radius-m);
   border: 1px solid #542c0855;
   transition: all var(--delay-s) ease;
+  box-shadow: #00000008 0 0 5rem
 }
 
 .super-section-4 .card:hover {
