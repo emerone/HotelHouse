@@ -1127,13 +1127,19 @@ main{
   border-radius: 100vmax;
   border: 1px solid var(--base-dark-color);
   background: transparent;
-  display: flex;
+  display: none;
   align-content: center;
   align-items: center;
   justify-content: center;
   opacity: .6;
   transition: all var(--delay-s) ease;
   cursor: pointer;
+}
+
+@media  (hover: hover) {
+  .super-section-7 .btn-banner {
+    display: flex;
+  }
 }
 
 
