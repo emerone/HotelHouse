@@ -1,4 +1,5 @@
 // animation 
+
 const header = document.querySelector('.super-container');
 const logoTitle = document.querySelector('.logo-title');
 const footer = document.querySelector('footer');
@@ -8,36 +9,59 @@ logoTitle.addEventListener("click", function(){
     footer.classList.add("menu")
 });
 
-//baner in news
+//banner in news section
 
 
 const btnBanner = document.querySelectorAll('.btn-banner');
 const banner = document.querySelector('.container-news');
+const body = document.querySelector('body');
 
-let i = 0;
-btnBanner[1].addEventListener("click", function(){
-    console.log(i)
+let i = 0
+
+    // bannerRight
+
+function bannerRight(){
     if(i == 0){
         banner.classList.replace('a', 'b');
         i++;
-        console.log(i);
     } else if(i == 1){
         banner.classList.replace('b', 'c');
         i++;
-        console.log(i);
     } else if(i == 2){
         banner.classList.replace('c', 'd');
         i++;
-        console.log(i);
     } else if(i == 3){
         banner.classList.replace('d', 'a');
         i = 0;
-        console.log(i);
     }
+    console.log(i);
+}
+
+btnBanner[1].addEventListener("click", function(){
+    bannerRight()
 });
 
+    //banner swap mobile
 
-btnBanner[0].addEventListener("click", function(){
+body.addEventListener('touchstart', (e) => {
+    start = e.touches[0].clientX
+})
+
+body.addEventListener('touchmove', (e) => {
+    move = e.touches[0].clientX
+    if(move + 75 < start && start != -5){
+        bannerRight()
+        start = -5
+    }
+    if(move - 75 > start && start != -5){
+        bannerLeft()
+        start = -5
+    }
+})
+
+    // bannerLeft
+
+function bannerLeft(){
     if(i == 0){
         banner.classList.replace('a', 'd');
         i = 3;
@@ -55,6 +79,11 @@ btnBanner[0].addEventListener("click", function(){
         i = 0;
         console.log(i)
     } 
+}
+
+
+btnBanner[0].addEventListener("click", function(){
+    bannerLeft()
 });
 
 
@@ -65,7 +94,6 @@ const modals = document.querySelectorAll('dialog');
 const btnsModalClose = document.querySelectorAll('.modal-btn-close');
 const btnsModalOpen = document.querySelectorAll('.modal-btn-open');
 
-console.log(modal)
 modal.showModal();
 
 
@@ -85,7 +113,7 @@ for(let p=0;p<btnsModalClose.length;p++){
     // close modals when clicking outside
 
     modals[p].addEventListener('click', (e) => {
-        console.log(e.target.nodeName);
+        // console.log(e.target.nodeName);
 
         if(e.target.nodeName == 'DIALOG'){
             modals[p].classList.replace('up', 'up-decrease');
@@ -97,10 +125,6 @@ for(let p=0;p<btnsModalClose.length;p++){
         }
     })
 }
-
-
-console.log(btnsModalOpen[0]);
-console.log(modals[0]);
 
 
 for(let q=0;q<btnsModalOpen.length;q++){
@@ -284,9 +308,7 @@ for(let b = 0; b<bedroom.length;b++){
 // Hash location 
 
 if ( window.location.hash == "#Bedroom"){
-    setTimeout(() => {
-        header.setAttribute('class', 'super-container b');
-    }, 1000)
+    header.setAttribute('class', 'super-container b');
 }
 
 if ( window.location.hash == "#Restaurant"){
