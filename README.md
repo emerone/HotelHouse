@@ -4,13 +4,13 @@ Website done in HTML, CSS, JS.
 
 ## Description
 
-Expemple of responsive Web-app for a hotel with custom menu, modal system for interactivities.
+Expemple of responsive Web-app for a hotel with an exotic menubar and a modal system for interactivities.
 
 ## Getting Started
 
 ### Dependencies
 
-* A conextion is requir to execute the load the font and images. 
+* Some fonts are stocked on an online server as well as the good map part.
 
 ### Installing
 
