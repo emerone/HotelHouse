@@ -4,7 +4,7 @@ Website done in HTML, CSS, JS.
 
 ## Description
 
-Expemple of responsive Web-app for a hotel with an exotic menubar and a modal system for interactivities.
+Expemple of responsive Web-app in HTML, CSS and JS for a hotel with an exotic menubar and a modal system for interactivities.
 
 ## Getting Started
 
